@@ -29,17 +29,16 @@ from __future__ import division
 
 import re
 import sys
-
 from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
 import pyaudio
 from six.moves import queue
+from queue import Queue
 
 # Audio recording parameters
 RATE = 16000
 CHUNK = int(RATE / 10)  # 100ms
-
 
 class MicrophoneStream(object):
     """Opens a recording stream as a generator yielding the audio chunks."""
@@ -160,32 +159,27 @@ def listen_print_loop(responses):
 
             num_chars_printed = 0
 
+# Iterates through server responses and produce a
+# list of words transcribed
+def listen_and_sample_words(responses, wordsQueue):
 
-def main():
-    # See http://g.co/cloud/speech/docs/languages
-    # for a list of supported languages.
-    language_code = 'en-US'  # a BCP-47 language tag
+    for response in responses:
+        if not response.results:
+            continue
 
-    client = speech.SpeechClient()
-    config = types.RecognitionConfig(
-        encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
-        sample_rate_hertz=RATE,
-        language_code=language_code)
-    streaming_config = types.StreamingRecognitionConfig(
-        config=config,
-        interim_results=True)
+        # The `results` list is consecutive. For streaming, we only care about
+        # the first result being considered, since once it's `is_final`, it
+        # moves on to considering the next utterance.
+        result = response.results[0]
+        if not result.alternatives:
+            continue
 
-    with MicrophoneStream(RATE, CHUNK) as stream:
-        audio_generator = stream.generator()
-        requests = (types.StreamingRecognizeRequest(audio_content=content)
-                    for content in audio_generator)
+        # Add the transcription of the top alternative to the words list
+        transcript = result.alternatives[0].transcript
+        wordsQueue.put(transcript)
 
-        responses = client.streaming_recognize(streaming_config, requests)
-
-        # Now, put the transcription responses to use.
-        listen_print_loop(responses)
-
-
-if __name__ == '__main__':
-    main()
-# [END speech_transcribe_streaming_mic]
+        # Exit recognition if any of the transcribed phrases could be
+        # one of our keywords.
+        #if re.search(r'\b(exit|quit)\b', transcript, re.I):
+        #    print('Exiting..')
+        #    break

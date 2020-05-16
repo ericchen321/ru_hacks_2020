@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ru-hacks-voice-rcog",
+  "private_key_id": "f649ece7972eb1c37f8ba3ffdf4c2caa79d2364b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCjvL5E6tHdOERW\nMTkyfeyH9IRrkpJHy1cCinqaNRj5h0xtQYLeJhL0Xz+IsZAnDd1OcoI0HO0yBlyB\niNGQadXbphJiD4u/8hYuGzkbNcJWv4XdrH2r4fals3WU3sa9tgnjlsQ7xyj4WfXQ\nEsIddx4opJK6i4+iFzvhQBZH37Ojd71K8I2DVjKAT9tYxWmi6pi+hjFin4ANckpQ\nMFI2SDwVxZYhQCPbyj8RyhZpMzj+x7RNVd9fz2nbTWoJyVrjqjlhGRveo38u/1Ty\nVNbZnrd+fiiPy+k+g+pPgTSklqzxEUjmCbhlM8Vmfl+K/jCrFt4o+rR3Q6niO7ec\nuafRmk8xAgMBAAECggEABg5tetu1FVNgxhyXyrc5E2xNcgDGM8agxy5h5Sgd1N9j\nlptfByJUZPQy9um022TzylRWkZPliCPcS+RIkBvO3Isfg4xv25LNep+1WvBmaewE\nPEdTKXm4GrfxG1qqi9dBNWLDV//m+YyzGKLg/QY5BNrVgvXpKav/VVBLPEkl4JMP\n7yZAIvUAs9ML1WyrF7Z9YBsohTcRYR8xZk40hypTcGcghtGXYrYnkiZT1f8zUAPH\nmQAX0ykv5HPAvnTKJlE5Topc4xneVKV5o4CGyYYsuN43g/mQucnGFQahoRpYf/ik\ngQTp3bHjDwJwjEDsixiLfvQHhczo4xw0rLncTTNrkwKBgQDiI9/nOtGKJ7QekZ5w\nWnp7jXBo3ToJ/O0GC5SoPkK76EZ1VpT9mu+FEXaGCeX/EYrR5hcRVxJRwKAl/ohE\nmwV3SaCUYAxD3m7pOo0w3u7rgr3RJTjJ2jgWTw6vNXufinzqSuV4LzWydqJFgHIv\nN0uMuDFbHfDS4sqfEwaXfsaOswKBgQC5W31UkzAtSnkdEqD33qzZch/YQlvXTsyq\nLZtFCJXdKTO2KrR2o/YqN80xL9PtDenIE+mWqLsU/sgMRbmP3hGPy5MpBeM2RpVw\nSwUMhzBw/8gIBb5xNbaeyWzSvqPtoe+zTmVOSY5DVi6K3GvLzWGWCDEDvcs+JuA6\nEzdVJrPciwKBgCwyyMs/0r6G3gxvd6EL/g5x6XuFaZeUKJta3hY3/QEO995tKrea\ndZ/zds/h1WMSAajeqLmJ5Bm4ZVSnt+h4yAu1hz4Yu6z0J4dMG1Zm7Bl5tzHObZf+\nH6I0l3ElKeFXxuxf8ROZXoxf5X1iCm8yBoEdawAdDPmau/F1XX90lshDAoGAWmdA\n7WsMaEqWX5OiZsJ4U2XSGkvjN1P7hlTQEg9p6IAb9JFHi0XU3ipxLbhCCLBsgWUU\n3KJW/Jp3P2USaBTLQ/LqR2vTsbkjUa2FPOMCwVo/WYpTpCuqci+ToAXTNidxHWbz\nCgfeFwGFmbx/5tq46c/89/Itmpajbi/JIQLLXpkCgYBsXDTn1k/PKW77Lg7peooa\n70JSI3s923NyVNDcJ9sy4JfDqbitk9x2uelZ4vcaa6SDyHevmcT6SUZTEEjs8V/O\nAiG1w9yL2moH4B4HJohagbKwLRL3c1Y+4ndbf2X7YmKV4FU7TxPkrKUW05IRMSm3\nwIqMkg7n4SW3OGs7JU1xnA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "eric-account@ru-hacks-voice-rcog.iam.gserviceaccount.com",
+  "client_id": "116586200362312221699",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/eric-account%40ru-hacks-voice-rcog.iam.gserviceaccount.com"
+}

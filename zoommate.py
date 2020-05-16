@@ -12,7 +12,8 @@ def checkAppThreadNumber(target):
             return p.num_threads()
         else:
             continue 
-
+        
+# check zoom video is on or off
 def checkZoomVideoStatus(target):
     while(True):
         if checkAppStatus(target) == True:
@@ -28,4 +29,5 @@ def checkZoomVideoStatus(target):
 
 if __name__ == "__main__":
     checkZoomVideoStatus('zoom.us')
+
    

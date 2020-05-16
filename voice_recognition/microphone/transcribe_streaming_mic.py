@@ -21,8 +21,7 @@ using pip:
 
     pip install pyaudio
 
-Example usage:
-    python transcribe_streaming_mic.py
+    modified based on code from https://github.com/GoogleCloudPlatform/python-docs-samples/speech/microphone
 """
 
 # [START speech_transcribe_streaming_mic]

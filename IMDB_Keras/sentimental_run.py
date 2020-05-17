@@ -8,7 +8,7 @@ from keras.preprocessing import sequence
 
 from queue import Queue
 
-MAX_NUM_WORDS_PROCESSED = 2
+MAX_NUM_WORDS_PROCESSED = 5
 
     
 # Function to convert   
@@ -22,7 +22,7 @@ def listToString(s):
 
 
 def sentimantal_analysis(sentence):
-    model = load_model("C:/Users/cgx19/ru_hacks_2020/ru_hacks_2020/IMDB_Keras/sentimantal_model.h5")
+    model = load_model("/Users/danieltong/Library/Mobile Documents/com~apple~CloudDocs/Study/Hackathon/ru_hacks_2020/IMDB_Keras/sentimantal_model.h5")
     word2index = imdb.get_word_index()
     test=[]
     for word in word_tokenize(sentence):

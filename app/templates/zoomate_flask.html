@@ -1,0 +1,32 @@
+<!-- {% extends "bootstrap/base.html" %}
+{% block title %}Zoomate{% endblock %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='mystyle.css')}}">
+{% endblock %}
+
+{% block content %}
+    <head>
+        <title>libfaceid Face Recognition</title>
+    </head>
+    <body>
+        <h1>libfaceid Face Recognition</h1>
+        <img id="video" src="{{ url_for('video_viewer') }}">
+    </body>
+{% endblock %} -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>libfaceid Face Recognition</title>
+</head>
+<body>
+    <h1>libfaceid Face Recognition</h1>
+    <img id="video" src="{{ url_for('video_viewer') }}">
+</body>
+</html>

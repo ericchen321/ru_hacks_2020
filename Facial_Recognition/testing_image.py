@@ -17,8 +17,6 @@ INPUT_DIR_MODEL_ENCODING  = "models/encoding/"
 INPUT_DIR_MODEL_TRAINING  = "models/training/"
 INPUT_DIR_MODEL           = "models/"
 
-
-
 def label_face(frame, face_rect, face_id, confidence):
     (x, y, w, h) = face_rect
     cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 255, 255), 1)

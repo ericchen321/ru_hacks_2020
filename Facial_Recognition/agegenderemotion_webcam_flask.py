@@ -55,11 +55,6 @@ def process_facedetection():
     cam_index = 0
     cam_resolution = RESOLUTION_QVGA
     model_detector=FaceDetectorModels.HAARCASCADE
-#    model_detector=FaceDetectorModels.DLIBHOG
-#    model_detector=FaceDetectorModels.DLIBCNN
-#    model_detector=FaceDetectorModels.SSDRESNET
-#    model_detector=FaceDetectorModels.MTCNN
-#    model_detector=FaceDetectorModels.FACENET
 
     model_poseestimator=FacePoseEstimatorModels.DEFAULT
     model_ageestimator=FaceAgeEstimatorModels.DEFAULT
@@ -122,7 +117,6 @@ def process_facedetection():
     # Release the camera
     camera.release()
     cv2.destroyAllWindows()
-
 
 # Initialize for web app
 @app.route('/')
